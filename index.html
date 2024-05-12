@@ -12,7 +12,11 @@
 	</header>
 	<section>
 		<div>
-			Digite o número em Reias R$<input type="number" name="numero" id="txtn">
+			Digite o número em Reias R$<input type="number" name="numero" id="txtn" min="0">
+			<input type="radio" name="tipo" id="tipo_dolar" checked>
+			<label for="tipo_dolar">Dólar</label>
+			<input type="radio" name="tipo" id="tipo_euro">
+			<label for="tipo_euro">Euro</label>
 			<input type="button" value="Converter" onclick="converter()">
 		</div>
 		<div id="res">
